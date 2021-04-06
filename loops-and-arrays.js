@@ -66,8 +66,24 @@ console.log(numbers);
 // Zorg ervoor dat dit ook zou werken als de array wel 100 of 200 getallen zou bevatten!
 // ==========================================
 
-const squares = [30, 2, 8, 24, 11];
+//stappenplan
+// maak een nieuwe array met de waardes van squares, noem deze volume
+//print de originele volume array
+//roep de waardes van volume array een voor een op
+//bereken het volume (lengte * breedte * hoogte) met de opgevraagde waarde
+// waarde[1] * waarde[1] * waarde[1]
+//herhaal dit voor de hele array
 
+const squares = [30, 2, 8, 24, 11];
+//maak een nieuwe array aan met dezelfde getallen.
+let volume = squares;
+console.log(volume);
+
+//voor elk getal in de array volume, vermenigvuldig het getal drie keer met zichzelf
+for (let i = 0; i < volume.length; i++) {
+    volume[i] = volume[i] * volume[i] * volume[i];
+}
+console.log(volume);
 // Verwachtte uitkomsten:
 // Vóór het script zie je de originele waardes:
 // console.log(numbers) geeft: [30, 2, 8, 24, 11];
