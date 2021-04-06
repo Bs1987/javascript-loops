@@ -37,8 +37,21 @@ console.log(names);
 // Zorg ervoor dat dit ook zou werken als de array wel 100 of 200 getallen zou bevatten!
 // ==========================================
 
-const numbers = [2, 4, 5, 29, 38];
+//stappenplan:
+//   - print de originele array
+//   - pas elke waarde in de array aan
+//   - print de aangepaste array
 
+const numbers = [2, 4, 5, 29, 38];
+//print de originele array
+console.log(numbers);
+// pas elke waarde in de array aan
+//voor elke waarde in de hele lengte van de array, vermenigvuldig met 3
+for (let i = 0; i < numbers.length; i++) {
+    numbers[i] = numbers[i] * 3;
+    }
+//print de nieuwe array
+console.log(numbers);
 // Verwachtte uitkomsten:
 // Vóór het script zie je de originele waardes:
 // console.log(numbers) geeft: [2, 4, 5, 29, 38];
