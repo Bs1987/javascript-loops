@@ -3,10 +3,27 @@
 // Schrijf een script dat iedere naam in bovenstaande array vervangt door een koosnaampje, door er -"je" achter te plakken.
 // Zorg ervoor dat dit ook zou werken als de array wel 100 of 200 namen zou bevatten!
 // ==========================================
+//stappenplan:
+//  - print de originele array
+//  - verander een waarde in de array
+//  - verander alle waarden in de array
 
+//print de originele array
 const names = ["Henk", "Piet", "Fred", "Joop"];
 console.log(names);
 
+//verander een waarde in de array
+// names[0] = names[0] + "je"
+// console.log(names[0]);
+
+//verander alle waarden in de array
+//door een for loop te maken met de lengte van de array wordt deze flexibel.
+for (let i = 0; i < names.length; i++) {
+    //voor i plaatsen in de array, voeg "je" toe aan de waarde
+    names[i] = names[i] + "je"
+    }
+//console.log buiten de loop anders print hij elke stap.
+console.log(names);
 // Verwachtte uitkomsten:
 // Vóór het script zie je de originele waardes:
 // console.log(names) geeft: ["Henk", "Piet", "Fred", "Joop"]
