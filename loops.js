@@ -73,4 +73,21 @@ for (let i = 0; i < 16; i++) {
 // >> 7
 // >> 9
 // ==========================================
+//  --> Maak een loop van 0 tot 9
+// --> vanaf 0 komt er niks
+//  --> tussen 3 en 6 komt er een > "if statement"
+//  --> vanaf 6 komt er een >> "if statement"
 
+//loop 0-9
+for (let i = 0; i < 10; i++) {
+    //als i 3 of groter en kleiner dan 6 is dan print je een > VOOR i
+    if (i >= 3 && i < 6) {
+        console.log("> " + i);
+    //    als i 6 of groter is print je >> VOOR i
+    }else if (i >= 6) {
+        console.log(">> " + i);
+    //    als i niet tussen 3 en groter dan 6 is print je alleen i
+    }else {
+        console.log(i);
+    }
+}
