@@ -23,13 +23,11 @@ for (let i = 0; i < 5; i++) {
     // i begint bij 0, dus 0, 1, 2, 3 geven "loop..." i < 4
     if (i < 4) {
         console.log("loop...");
-    //    als i > 4 (in dit geval alleen 5)
+        //    als i > 4 (in dit geval alleen 5)
     } else {
-        console.log("klaar");
+        console.log("klaar!");
     }
-
 }
-
 
 // ==========================================
 // Opdracht 3. Maak een for-loop die van 0 tot 15 loopt. Voor ieder getal wordt in de console gelogd of het getal even of oneven is.
@@ -40,6 +38,22 @@ for (let i = 0; i < 5; i++) {
 // 3 is oneven
 // .... etc.
 // 15 is oneven
+//loop voor 0-15
+for (let i = 0; i < 16; i++) {
+    //aparte if voor 0 want je kunt 0 niet delen
+    if (i === 0) {
+        console.log(i + " is even");
+    }
+    // even getallen gedeeld door twee houden niks over. de modulus operator "%" bekijkt of er na een deling iets over blijft.
+    else if (i % 2 === 0) {
+        console.log(i + " is even");
+        //    in de andere gevallen zijn ze dus oneven
+    } else {
+        console.log(i + " is oneven")
+    }
+
+
+}
 
 // Tip: een getal is oneven als je het door 2 deelt en er blijft nog iets over. Een getal is even als je het deelt door 2 en er blijft niets over..
 // ==========================================
