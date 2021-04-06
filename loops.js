@@ -82,10 +82,10 @@ for (let i = 0; i < 16; i++) {
 for (let i = 0; i < 10; i++) {
     //als i 3 of groter en kleiner dan 6 is dan print je een > VOOR i
     if (i >= 3 && i < 6) {
-        console.log("> " + i);
+        console.log(">",i);
     //    als i 6 of groter is print je >> VOOR i
     }else if (i >= 6) {
-        console.log(">> " + i);
+        console.log(">>",i);
     //    als i niet tussen 3 en groter dan 6 is print je alleen i
     }else {
         console.log(i);
